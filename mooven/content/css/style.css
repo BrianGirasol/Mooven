@@ -1,0 +1,217 @@
+@font-face {
+    font-family: "Ubuntu";
+	src: url("../fonts/Ubuntu-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Ubuntu Medium";
+	src: url("../fonts/Ubuntu-Medium.ttf") format('truetype');
+}
+
+
+body {
+	background: url("../images/bg.jpg") no-repeat;
+	background-position: center;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background: linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0));
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0 auto;
+    position: absolute;
+	top: 0;
+    z-index: 9999;
+}
+
+.h-cont {
+    max-width: 1280px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+}
+
+    .h-cont img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        padding: 5px;
+        margin: 0;
+        border: 0;
+    }
+
+.menu a {
+    font-family: "Ubuntu";
+    font-size: 15px;
+    text-decoration: none;
+	color: #ffffff;
+    padding: 2px 8px 2px 8px;
+    margin: 0;
+    cursor: pointer;
+}
+
+    .menu a:hover {
+        color: #ffffff !important;
+        padding: 2px 7px 2px 7px;
+        border-radius: 50px;
+        border: 1px solid #fff;
+    }
+
+main {
+	max-width: 1170px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 5% auto;
+}
+
+	main .pesquisar, main .resultado {
+		width: 100%;
+		max-width: 500px;
+		height: auto;
+		padding: 0;
+		margin-bottom: 15px;
+	}
+
+		main .pesquisar h1 {
+			font-family: "Ubuntu";
+			color: #ffffff;
+		}
+
+		main .pesquisar input[type=text] {
+			background: transparent;
+			width: 100%;
+			padding: 0 0 18px 0;
+			text-indent: 15px;
+			border-radius: 0;
+			border: 0;
+			border-bottom: 2px solid #00ffff;
+			outline: none;
+		}
+
+			main .pesquisar input[type=text]::-webkit-input-placeholder {
+				color: #bbbbbb;	
+			}
+
+			main .pesquisar input[type=text]:valid {
+				color: #ffffff;
+			}
+
+		main .pesquisar input[type=submit], main .pesquisar button {
+			background: transparent;
+			font-family: "Ubuntu";
+			font-size: 16px;
+			color: #00ffff;
+    		padding: 5px 10px 5px 10px;
+    		border-radius: 3px;
+    		border: 1px solid #00ffff;
+    		outline: none;
+    		margin: 10px 0 10px 0;
+    		float: right;
+			cursor: pointer;
+			transition: all ease-in-out 0.3s; 
+		}
+
+			main .pesquisar input[type=submit]:hover, main .pesquisar button:hover {
+				background: #00ffff;
+				color: #002046;    			
+    			border: 1px solid #00ffff;    			
+			}
+
+	main .resultado div {
+		background: transparent;
+		font-family: "Ubuntu";
+		font-size: 16px;
+		color: #ffffff;
+		padding: 10px;
+		margin-bottom: 15px;
+		border-radius: 3px;
+		border: 1px solid #00ffff;
+	}
+
+		main .resultado div h3, main .resultado div h4 {
+			font-weight: normal;
+		}
+
+		main .resultado div img {
+			width: 100%;
+			max-width: 150px;
+			height: auto;
+			padding: 0;
+			margin: 0 10px 0 0;
+			border: 0;
+			float: left;
+		}
+
+		main .resultado div span {
+			font-family: "Ubuntu Medium";
+		}
+
+	main .resultado .btnPerfil {
+		background: transparent;
+		font-family: "Ubuntu";
+		font-size: 16px;
+		color: #00ffff;
+		text-decoration: none;
+		outline: none;
+   		padding: 5px 10px 5px 10px;
+   		border-radius: 3px;
+   		border: 1px solid #00ffff;
+   		outline: none;
+   		margin: 10px 0 10px 0;
+		cursor: pointer;
+		transition: all ease-in-out 0.3s; 
+		}
+
+			main .resultado .btnPerfil:hover {
+				background: #00ffff;
+				color: #002046;    			
+    			border: 1px solid #00ffff;    			
+			}
+
+main .repos div {
+	background: transparent;
+		font-family: "Ubuntu";
+		font-size: 16px;
+		color: #ffffff;
+		padding: 10px;
+		margin-bottom: 15px;
+		border-radius: 3px;
+		border: 1px solid #00ffff;
+}
+
+main .repos div span {
+	font-family: "Ubuntu Medium";
+}
+
+main .repos div .btnRepos {
+		background: transparent;
+		font-family: "Ubuntu";
+		font-size: 16px;
+		color: #00ffff;
+		text-decoration: none;
+		outline: none;
+   		padding: 5px 10px 5px 10px;
+   		border-radius: 3px;
+   		border: 1px solid #00ffff;
+   		outline: none;
+   		margin: 10px 0 10px 0;
+		cursor: pointer;
+		transition: all ease-in-out 0.3s; 
+		}
+
+			main .repos div .btnRepos:hover {
+				background: #00ffff;
+				color: #002046;    			
+    			border: 1px solid #00ffff;    			
+			}
